@@ -1,0 +1,684 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@600&family=Oswald:wght@200;300;400;500;600&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/avenir');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400&display=swap');
+
+
+
+:root{
+    --gris:rgb(240, 245, 245);
+    --azul1:rgb(7, 13, 89);
+    --azul2:rgb(31, 60, 136);
+    --naranja:rgb(238, 111, 87);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.4%;
+}
+
+body{
+    background: var(--gris);
+}
+/*Header*/
+header{
+    background: var(--azul2);
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--gris);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header nav{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 2.5rem;
+    margin: 3rem 2rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: var(--gris);
+}
+
+header nav ul li:hover{
+    color: var(--naranja);
+}
+/*Home*/
+.home{
+    height: 90vh;
+    padding: 5rem;
+}
+.contenido{
+    padding-top: 3rem;
+    display: flex;
+}
+
+.contenido .datos{
+    width: 50%;
+    padding: 12% 0;
+}
+
+.contenido img{
+    width: 50%;
+}
+
+.contenido div h1{
+    font-size: 8rem;
+    font-family: Inter;
+    color: var(--azul1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido div p{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: avenir;
+    font-weight: bold;
+    color: var(--azul2);
+    text-align: center;
+}
+
+.iconos{
+    text-align: center;
+}
+
+.iconos i{
+    font-size: 5rem;
+    margin: 3rem;
+    color: var(--azul2);
+}
+
+.iconos i:hover{
+    cursor: pointer;
+    color: var(--naranja);
+    transition: all .75s;
+}
+
+/*aboutme*/
+
+.aboutme{
+    padding-top: 10rem;
+    display: flex;
+}
+
+.about{
+    width: 100%;
+    padding: 0 12rem;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about img{
+    padding-left:12rem;
+    position: absolute;
+    width: 40rem;
+    right: 85rem;
+}
+
+.about > div{
+    width: 80rem;
+    height: auto;
+    padding: 5rem 10rem;
+    box-shadow: 3rem 1rem rgba( 0, 0, 0, .1);
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.about > div > h2{
+    text-align: center;
+    font-size: 5rem;
+    font-family: Inter;
+    color: var(--azul1);
+    margin-bottom: 3rem;
+}
+
+.about > div > p{
+    display: flex;
+    font-size: 3rem;
+    text-align: justify;
+    font-family: avenir;
+}
+
+/*Skills*/
+
+.tec{
+    padding-top: 20rem;
+}
+.tecnologias > h2{
+    color: var(--azul1);
+    font-size: 5rem;
+    font-family: Inter;
+    text-align: center;
+}
+
+.skills{
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem, 30rem));
+    justify-content: center;
+}
+
+.skills > div{
+    font-size: 5rem;
+    margin: 1rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.skills > div > div{
+    font-size: 2rem;
+    font-family: Avenir;
+    color: var(--azul2);
+}
+
+.html i{
+    color: var(--naranja);
+}
+
+.css i{
+    color: var(--azul2);
+}
+
+.js i{
+    color: rgb(236, 205, 53);
+}
+
+.boot i{
+    color: rgb(117,17,246);
+}
+
+.php{
+    color: rgb(97,124,190);
+}
+
+.my{
+    color: rgb(255,165,24);
+}
+
+.java{
+    color: rgb(232,34,38);
+}
+.git{
+    color:rgb(240,81,51);
+}
+
+.react{
+    color: rgb(9,217,254);
+}
+
+.go{
+    color: rgb(106,215,229);
+}
+/*Portafolio*/
+
+.portafolio .contenedor{
+    padding: 12rem;
+}
+
+.portafolio .contenedor > h2{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--azul1);
+    font-family: Inter;
+}
+
+.caja{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.twice{
+    position: relative;
+    width: 40rem;
+    
+}
+.twice img{
+    width: 100%;
+}
+.twice > div{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Avenir;
+    color: var(--azul2);
+}
+
+.image{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.image:after,
+.image:before{
+    content: '';
+    background: rgba(31, 60, 136,.3);
+    width: 200%;
+    height: 80rem;
+    position: absolute;
+    transition: all 900ms;
+}
+.image:before{
+    transform: rotate(45deg) translateY(-120rem) translateX(-19rem);
+}
+.image:after{
+    transform: rotate(45deg) translateY(120rem) translateX(-46rem);
+}
+
+.image:hover:before{
+    
+    transform: rotate(45deg) translateY(10rem) translateX(-19rem);
+}
+.image:hover:after{
+    transform: rotate(45deg) translateY(10rem) translateX(-19rem);
+}
+
+.datoss{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 10rem;
+    padding: 2rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.datoss > h2{
+    color: var(--gris);
+    font-size: 3rem;
+    font-family: Inter;
+    text-align: start;
+}
+.hover{
+    display: flex;
+}
+.ver{
+    margin: .5rem;
+    width: 8rem;
+    padding: .3rem;
+    background: var(--naranja);
+    border-radius:8%;
+    font-weight: bold;
+}
+
+.hover > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gris);
+}
+.hover .fa-brands{
+    font-size: 3rem;
+    margin: .5rem;
+    padding: .3rem;
+}
+
+.image:hover .datoss{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+/*Contactame*/
+
+.contactame div{
+    width: 100%;
+    padding: 12rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.contactame div img{
+    width: 50rem;
+    margin-right: 10rem;
+}
+
+.contactame div button{
+    width: 30rem;
+    font-size: 4rem;
+    background: var(--azul1);
+    color: var(--gris);
+    font-family: Inter;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-left: 15rem;
+    border: none;
+    position: relative;
+}
+
+.contactame div button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,var(--naranja),var(--azul2),rgb(57, 225, 96),var(--naranja),var(--azul2),rgb(57, 225, 96),var(--naranja),var(--azul2),rgb(57, 225, 96));
+    background-size: 800%;
+    border-radius: 5rem;
+    filter: blur(.8rem);
+    animation: marco 20s linear infinite;
+}
+
+@keyframes marco{
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 12rem;
+    background: var(--azul2);
+}
+
+footer h2{
+    text-align: center;
+    color: var(--gris);
+    font-size: 2rem;
+    font-family: Inter;
+}
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .about > div{
+        width: 60rem;
+        height: auto;
+        padding: 5rem 10rem;
+        box-shadow: 3rem 1rem rgba( 0, 0, 0, .1);
+        border: 1px solid rgba(0,0,0,.1);
+    }
+    .about img{
+        right: 66rem;
+    }
+    
+    .about > div > h2{
+        text-align: center;
+        font-size: 4rem;
+        font-family: Inter;
+        color: var(--azul1);
+        margin-bottom: 3rem;
+    }
+    
+    .about > div > p{
+        display: flex;
+        font-size: 2rem;
+        text-align: justify;
+        font-family: avenir;
+    }
+
+    /*Contactame*/
+
+.contactame div{
+   
+    width: 100%;
+    padding: 12rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contactame div img{
+    width: 40rem;
+}
+
+.contactame div button{
+    width: 25rem;
+    font-size: 3.5rem;
+    background: var(--azul1);
+    color: var(--gris);
+    font-family: Inter;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-left: 0;
+    border: none;
+    left: 0;
+}
+
+}
+
+@media (max-width:824px){
+
+    header nav ul li{
+        display: inline-block;
+        font-family: Inter;
+        font-size: 2rem;
+        margin: 3rem 2rem;
+        letter-spacing: .2rem;
+        font-weight: bold;
+        cursor: pointer;
+        list-style: none;
+        text-decoration: none;
+        color: var(--gris);
+    }
+    .home{
+        height: 50vh;
+        padding: 5rem;
+    }
+    .about > div{
+        width: 40rem;
+        height: auto;
+        padding: 5rem 7rem;
+        box-shadow: 3rem 1rem rgba( 0, 0, 0, .1);
+        border: 1px solid rgba(0,0,0,.1);
+    }
+    .about img{
+        right: 46rem;
+    }
+    
+    .about > div > h2{
+        text-align: center;
+        font-size: 4rem;
+        font-family: Inter;
+        color: var(--azul1);
+        margin-bottom: 3rem;
+    }
+    
+    .about > div > p{
+        display: flex;
+        font-size: 2rem;
+        text-align: justify;
+        font-family: avenir;
+    }
+
+   .contenido div h1{
+        font-size: 5rem;
+    }
+
+   .contenido div p{
+        font-size: 2.5rem;
+    }
+
+
+   .contactame div{
+        display: flex;
+        columns: 1;
+        justify-content: center;
+    }
+
+    .contactame div img{
+        margin-bottom: 3rem;
+        }
+
+   
+    }
+
+
+
+@media (max-width:718px){
+    html{
+        font-size: 48%;
+    } 
+}
+
+@media (max-width:622px){
+    nav{
+        height: 8rem;
+    }
+   ul{
+    position: absolute;
+     height: 50rem;
+     background: var(--azul2);
+     align-items: center;
+     opacity: 0;
+     transition: .2s linear;
+   }
+   ul > a > li{
+    width: 100%;
+    text-align: center;
+   }
+
+   header{
+    display: flex;
+    position: relative;
+
+    }
+    header label{
+        margin-top: 2.5rem;
+    margin-right: 5rem;
+    position: absolute;
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+    }
+
+    header input:checked ~ nav  ul{
+        opacity: 1;
+        transform: translatey(1);
+    }
+    header input:checked ~ label:before{
+        content: '\f00d';
+    }
+
+}
+
+
+
+@media (max-width:564px){
+    /*Home*/
+
+    .home{
+        height: 40vh;
+        padding: 5rem;
+    }
+    
+    
+    .contenido img{
+        width: 50%;
+    }
+    
+    .contenido div h1{
+        font-size: 4rem;
+        font-family: Inter;
+        color: var(--azul1);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .contenido div p{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: avenir;
+        font-weight: bold;
+        color: var(--azul2);
+        text-align: center;
+    }
+    
+    .iconos{
+        text-align: center;
+    }
+    
+    .iconos i{
+        font-size: 3rem;
+        margin: 3rem;
+        color: var(--azul2);
+    }
+
+    /*about*/
+    .about{
+        display: block;
+        padding: 5rem;
+    }
+
+    .about div{
+        width: 50rem;
+    }
+    .about img{
+        right: 0;
+        position: relative;
+    }
+
+    .contactame div{
+        display: block;
+    }
+
+    .contactame div img{
+        margin-left: 0rem;
+    }
+
+    .contactame div button{
+        margin-left: 0rem;
+    }
+    
+
+    
+}
