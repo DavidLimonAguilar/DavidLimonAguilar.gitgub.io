@@ -660,25 +660,29 @@ footer h2{
     }
 
     .about div{
-        width: 50rem;
+        width: 40rem;
     }
     .about img{
         right: 0;
         position: relative;
     }
+    .contactame div{
+        padding: 0rem;
+        border: 3px solid red;
+    }
 
     .contactame div{
         display: block;
+        padding: 4rem;
     }
 
     .contactame div img{
-        margin-left: 0rem;
+        width:40rem;
     }
 
     .contactame div button{
-        margin-left: 0rem;
+        margin-left: 10rem;
     }
-    
 
     
 }
